@@ -16,10 +16,10 @@ func HammingWeight(num uint32) int {
 }
 
 func TestHammingWeight(t *testing.T) {
-	assert := assert.New(t)
+	assertions := assert.New(t)
 
 	var x uint32
 	x = 0b00000000000000000100000000001011
 
-	assert.Equal(HammingWeight(x), 4, "Should be equal to 4")
+	assertions.Equal(HammingWeight(x), 4, "Should be equal")
 }
